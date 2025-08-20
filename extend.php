@@ -24,8 +24,4 @@ return [
     
     (new Extend\Console())
         ->command(\CryptoFund\ERC20Money\Commands\CheckTransactionsCommand::class),
-    
-    // Manual service provider registration for older Flarum versions
-    (new Extend\ServiceProvider())
-        ->register(\CryptoFund\ERC20Money\Provider\ERC20ServiceProvider::class),
 ];
